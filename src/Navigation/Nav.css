@@ -35,28 +35,34 @@ body, html {
 }
 
 .search-input {
-    padding: 10px 45px 10px 45px;
+    padding: 9px 10px 10px 45px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 1px;
     width: auto;
     margin-left: 5px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 5px;
 }
 
-.search{
+.search-icon {
+    color: #555;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
+    width: 26px;
     height: 36px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: yellow;
-}
-
-.search-icon {
-    font-size: 26px;
-    color: #555;
-    cursor: pointer;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+    border-right: none;
+    border-top: none;
+    border-left: none;
+ 
 }
 
 .Home{
@@ -159,6 +165,11 @@ body, html {
         width: 22%; /* Adjust width of search input */
     }
 
+    .search-icon{
+        width: 26px;
+        height: 36px;
+    }
+
     .Home-btn {
         margin-left: 2px; /* Move Home button more to the left */
         margin-right: 0; /* Align Home button to the left */
@@ -191,8 +202,7 @@ body, html {
 
     .toggle-button {
         margin-left: auto;
-        margin-right: auto; /* Center the toggle button */
-        margin-top: 7px; /* Align with other items */
+        margin-right: auto; /* Center the toggle button */ 
         font-size: 20px; /* Reduce size on small screens */
     }
 }
