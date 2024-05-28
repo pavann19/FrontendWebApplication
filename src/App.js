@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Cartitems from "./Cartitems/Cartitems";
@@ -116,8 +116,6 @@ function App() {
       )
     );
   }
-
- // const location = useLocation();  Use this hook to get the current route
 
   return (
     <div className="app">
