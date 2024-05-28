@@ -1,0 +1,198 @@
+body, html {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 999;
+    min-width: 1200px;
+    flex-wrap: wrap; /* Enable wrapping */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; /* Enable wrapping */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 150px;
+    margin-left: calc(100% - 67%);
+}
+
+.search-input {
+    padding: 10px 45px 10px 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.search-icon {
+    font-size: 26px;
+    color: #555;
+    cursor: pointer;
+}
+
+.Home{
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+.Home-btn {
+    font-size: 30px;
+    color: #555;
+    cursor: pointer;
+}
+
+.cart-container{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.total{
+    margin-left: 10px;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px; /* Adjust based on your desired positioning */
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-container h1 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.total {
+    margin-left: auto;
+    margin-right: auto; /* Center the total container */
+    display: flex;
+    align-items: center;
+}
+
+.total-cart {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto; /* Center the toggle button */
+}
+
+/* Base styles */
+.cart-count {
+    position: absolute;
+    top: 2.8%;
+    transform: translateY(-50%);
+    right: 39.1%; /* Adjust this value based on your desired positioning */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+        min-width: 1000px;
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        min-width: 150px;
+        margin-left: auto;
+    }
+
+    .search-input {
+        width: 22%; /* Adjust width of search input */
+    }
+
+    .Home-btn {
+        margin-left: 2px; /* Move Home button more to the left */
+        margin-right: 0; /* Align Home button to the left */
+    }
+
+    .cart-container {
+        margin-left: 10px; /* Move Cart container more to the left */
+        margin-right: auto; /* Align Cart container to the left */
+    }
+
+    .cart-icon {
+        margin-left: 10px; /* Adjust margin to position it closer */
+    }
+
+    .cart-count {
+        top: 2.8%;
+        right: 10%; /* Adjust this value based on your desired positioning */
+        display: block;
+    }
+
+    .logo-container {
+        display: none; /* Hide the logo on small screens */
+    }
+
+    .total {
+        margin-left: auto;
+        margin-right: auto; /* Center the total container */
+        margin-top: 7px; /* Align with other items */
+    }
+
+    .toggle-button {
+        margin-left: auto;
+        margin-right: auto; /* Center the toggle button */
+        margin-top: 7px; /* Align with other items */
+        font-size: 20px; /* Reduce size on small screens */
+    }
+}

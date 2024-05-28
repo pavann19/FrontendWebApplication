@@ -1,0 +1,61 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding-top: 50px; /* Add padding to the top for spacing */
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+   position: absolute;       
+   top: 16px;
+   right: 2.5%;
+}
+
+/* Additional styles for inner elements */
+.sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust inner elements as needed */
+.sidebar-item {
+    margin-bottom: 20px; /* Add margin between sidebar items */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 50%;
+        padding-top: 0; /* Remove padding on small screens */
+    }
+    .toggle-button{
+        display: flex;
+    }
+}
