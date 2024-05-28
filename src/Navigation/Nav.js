@@ -27,11 +27,9 @@ const Nav = ({ handleInputChange, query, cartCount, toggleSidebar }) => {
             value={query}
             placeholder="Enter your search shoes."
           />
-          <div className="search">
-            <Link>
+          <Link>
               <IoSearchOutline className="nav-icons search-icon" />
             </Link>
-            </div>
             <div className="cart-container">
               <Link to="/cart">
               <BsCart className="nav-icons cart-icon" />
