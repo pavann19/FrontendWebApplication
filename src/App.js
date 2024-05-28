@@ -117,7 +117,7 @@ function App() {
     );
   }
 
-  const location = useLocation(); // Use this hook to get the current route
+ // const location = useLocation();  Use this hook to get the current route
 
   return (
     <div className="app">
